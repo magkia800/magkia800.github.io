@@ -84,6 +84,13 @@ a { color: inherit; }
 .feature-grid h3, .setup-list h3 { margin: 20px 0 10px; font-size: 21px; }
 .feature-grid article > p:last-child, .setup-list p { margin: 0; color: var(--muted); line-height: 1.65; }
 
+.reaction-band { display: grid; grid-template-columns: 1fr 1fr; gap: 88px; background: #0f1519; border-top: 1px solid var(--line); }
+.reaction-intro > p:last-child { max-width: 600px; margin: 22px 0 0; color: #b4bec4; font-size: 16px; line-height: 1.7; }
+.reaction-places { border-top: 1px solid #354049; }
+.reaction-places div { padding: 22px 0; display: grid; grid-template-columns: 120px 1fr; gap: 22px; border-bottom: 1px solid #354049; }
+.reaction-places strong { color: #fff; font-size: 14px; }
+.reaction-places span { color: #aeb9bf; font-size: 14px; line-height: 1.6; }
+
 .setup-band { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 84px; background: var(--paper); color: var(--ink); }
 .setup-list { border-top: 1px solid #ccd3d7; }
 .setup-list article { padding: 28px 0; display: grid; grid-template-columns: 18px 1fr; gap: 16px; border-bottom: 1px solid #ccd3d7; }
@@ -137,7 +144,8 @@ footer > p { grid-column: 1 / -1; margin: 4px 0 0; }
   .section { padding: 72px 22px; }
   .section h2, .release-band h2 { font-size: 34px; }
   .feature-grid { grid-template-columns: 1fr; gap: 34px; margin-top: 48px; }
-  .setup-band, .privacy-band { grid-template-columns: 1fr; gap: 48px; }
+  .setup-band, .privacy-band, .reaction-band { grid-template-columns: 1fr; gap: 48px; }
+  .reaction-places div { grid-template-columns: 1fr; gap: 7px; }
   footer { grid-template-columns: 1fr; }
   footer nav { flex-wrap: wrap; }
   footer > p { grid-column: auto; }
